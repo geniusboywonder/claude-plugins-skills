@@ -20,6 +20,13 @@ Standalone skill packages for specialized agent capabilities:
 
 ### Installation Methods
 
+#### Method 0: Claude install
+
+```bash
+/plugin marketplace add geniusboywonder/claude-plugins-skills
+/plugin install claude-plugins-skills@github-reader
+```bash
+
 #### Method 1: Direct Marketplace Installation (Recommended)
 
 Add this marketplace to your Claude Code configuration:
