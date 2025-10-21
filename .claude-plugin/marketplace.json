@@ -14,7 +14,11 @@
   "plugins": [
     {
       "name": "github-reader",
-      "source": "./github-reader",
+      "source": {
+        "source": "github",
+        "repo": "geniusboywonder/claude-plugins-skills",
+        "path": "plugins/github-reader"
+      },
       "description": "Read and analyze public GitHub repositories using API-first approach without cloning",
       "version": "1.0.0",
       "author": {
@@ -22,6 +26,7 @@
       },
       "category": "development-tools",
       "tags": ["github", "code-analysis", "repository", "examples"],
+      "license": "MIT",
       "homepage": "https://github.com/geniusboywonder/claude-plugins-skills/tree/main/plugins/github-reader",
       "repository": {
         "type": "git",

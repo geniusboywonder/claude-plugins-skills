@@ -20,26 +20,36 @@ Standalone skill packages for specialized agent capabilities:
 
 ### Installation Methods
 
-#### Method 0: Claude install
+#### Method 1: Add as Marketplace (Recommended)
 
+Install plugins directly from this marketplace in Claude Code:
+
+**Using CLI:**
 ```bash
+# Add marketplace via command
 /plugin marketplace add geniusboywonder/claude-plugins-skills
-/plugin install claude-plugins-skills@github-reader
-```bash
 
-#### Method 1: Direct Marketplace Installation (Recommended)
+# Install plugin from marketplace
+/plugin install github-reader
+```
 
-Add this marketplace to your Claude Code configuration:
+**Using Settings File:**
 
-```bash
-# Add marketplace to your Claude Code settings
-# In ~/.claude/settings.json, add:
+Add to `~/.claude/settings.json`:
+```json
 {
-  "marketplaces": [
-    "https://github.com/geniusboywonder/claude-plugins-skills"
-  ]
+  "extraKnownMarketplaces": {
+    "neill-plugins": {
+      "source": {
+        "source": "github",
+        "repo": "geniusboywonder/claude-plugins-skills"
+      }
+    }
+  }
 }
 ```
+
+Then use `/plugin install github-reader` to install any plugin from this marketplace.
 
 #### Method 2: Individual Plugin Installation
 
@@ -122,8 +132,22 @@ claude-plugins-skills/
 │       ├── references/
 │       └── README.md
 ├── README.md                   # This file
+├── MARKETPLACE.md              # Marketplace usage guide
 ├── CONTRIBUTING.md
 └── LICENSE
+```
+
+## Marketplace Usage
+
+This repository is configured as a Claude Code marketplace. For detailed instructions on using the marketplace, see [MARKETPLACE.md](./MARKETPLACE.md).
+
+**Quick Start:**
+```bash
+# Add marketplace
+/plugin marketplace add geniusboywonder/claude-plugins-skills
+
+# Install plugin
+/plugin install github-reader
 ```
 
 ## Contributing
