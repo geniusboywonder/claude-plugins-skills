@@ -1,0 +1,51 @@
+{
+  "name": "github-reader",
+  "version": "1.0.0",
+  "description": "Read and analyze public GitHub repositories using API-first approach without cloning. Intelligently fetches repository content, prioritizes examples, and provides context-aware filtering.",
+  "author": {
+    "name": "Neill Adamson"
+  },
+  "homepage": "https://github.com/geniusboywonder/claude-plugins-skills/tree/main/plugins/github-reader",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/geniusboywonder/claude-plugins-skills.git",
+    "directory": "plugins/github-reader"
+  },
+  "license": "MIT",
+  "keywords": [
+    "github",
+    "repository-analysis",
+    "code-search",
+    "api-first",
+    "examples",
+    "documentation"
+  ],
+  "category": "development-tools",
+  "tags": [
+    "github",
+    "code-analysis",
+    "repository",
+    "examples",
+    "search"
+  ],
+  "components": {
+    "skills": ["skills/github-reader"]
+  },
+  "requirements": {
+    "python": ">=3.8"
+  },
+  "metadata": {
+    "features": [
+      "Zero disk usage - API-first approach",
+      "Context-aware filtering for relevant examples",
+      "Automatic example prioritization",
+      "Progressive disclosure for token efficiency",
+      "No authentication required for public repos"
+    ],
+    "limitations": [
+      "Public repositories only",
+      "60 API requests per hour (unauthenticated)",
+      "Text files only (no binary support)"
+    ]
+  }
+}

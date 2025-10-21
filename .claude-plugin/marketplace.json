@@ -1,0 +1,32 @@
+{
+  "name": "claude-plugins-skills",
+  "owner": {
+    "name": "Neill Adamson",
+    "email": "nadamson@gmail.com",
+    "github": "geniusboywonder"
+  },
+  "metadata": {
+    "description": "A curated collection of Claude Code plugins and skills for enhanced development workflows",
+    "version": "1.0.0",
+    "pluginRoot": "./plugins"
+  },
+  "plugins": [
+    {
+      "name": "github-reader",
+      "source": "./github-reader",
+      "description": "Read and analyze public GitHub repositories using API-first approach without cloning",
+      "version": "1.0.0",
+      "author": {
+        "name": "Neill Adamson"
+      },
+      "category": "development-tools",
+      "tags": ["github", "code-analysis", "repository", "examples"],
+      "homepage": "https://github.com/geniusboywonder/claude-plugins-skills/tree/main/plugins/github-reader",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/geniusboywonder/claude-plugins-skills.git",
+        "directory": "plugins/github-reader"
+      }
+    }
+  ]
+}
