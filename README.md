@@ -69,6 +69,7 @@ unzip github-reader-v1.0.0.zip -d ~/.claude/plugins/
 **Status:** ✅ Stable
 
 Read and analyze public GitHub repositories using an API-first approach without cloning. Features context-aware filtering, automatic example prioritization, and zero disk footprint.
+Token optimised for minimal token use.
 
 **Key Features:**
 - Zero disk usage - API-first approach
@@ -158,15 +159,10 @@ Individual plugins may have additional licensing terms - check plugin-specific L
 ## Roadmap
 
 ### Upcoming Plugins
-- [ ] Code Review Assistant - Automated code review with best practices
-- [ ] Test Generator - Auto-generate test cases from code
-- [ ] Documentation Generator - Smart documentation from code
-- [ ] API Explorer - Interactive API testing and documentation
+- [ ] Anything I find useful
 
 ### Upcoming Skills
-- [ ] Security Analyzer - Vulnerability detection
-- [ ] Performance Profiler - Code performance analysis
-- [ ] Refactoring Assistant - Automated refactoring suggestions
+- [ ] Anything I find useful
 
 Want to contribute to the roadmap? Open an issue or discussion!
 
