@@ -12,7 +12,9 @@ Comprehensive extension packages containing custom commands, agents, skills, and
 
 ### Skills
 
-Coming soon: Additional skill packages for specialized agent capabilities.
+Standalone skill packages for specialized agent capabilities:
+
+- **[github-reader](./skills/github-reader/)** - Read and analyze public GitHub repositories without cloning (standalone skill)
 
 ## Quick Start
 
@@ -42,6 +44,9 @@ git clone https://github.com/geniusboywonder/claude-plugins-skills.git
 
 # Install a specific plugin
 cp -r claude-plugins-skills/plugins/github-reader ~/.claude/plugins/
+
+# OR install as standalone skill
+cp -r claude-plugins-skills/skills/github-reader ~/.claude/skills/
 
 # Restart Claude Code or reload plugins
 ```
@@ -74,10 +79,18 @@ Read and analyze public GitHub repositories using an API-first approach without 
 
 **Installation:**
 ```bash
+# As plugin (full package)
 cp -r plugins/github-reader ~/.claude/plugins/
+
+# As standalone skill
+cp -r skills/github-reader ~/.claude/skills/
 ```
 
-[📚 Full Documentation](./plugins/github-reader/README.md)
+[📚 Plugin Documentation](./plugins/github-reader/README.md) | [📚 Skill Documentation](./skills/github-reader/README.md)
+
+**Available As:**
+- 📦 Plugin - Full package with plugin wrapper
+- ⚡ Skill - Lightweight standalone skill
 
 ## Directory Structure
 
@@ -86,15 +99,20 @@ claude-plugins-skills/
 ├── .claude-plugin/
 │   └── marketplace.json        # Marketplace catalog
 ├── plugins/
-│   └── github-reader/          # GitHub repository reader plugin
+│   └── github-reader/          # Full plugin package
 │       ├── .claude-plugin/
 │       │   └── plugin.json
 │       ├── skills/
-│       │   └── github-reader/
+│       │   └── github-reader/  # Skill bundled in plugin
 │       ├── README.md
 │       ├── LICENSE
 │       └── CHANGELOG.md
-├── skills/                     # Coming soon
+├── skills/
+│   └── github-reader/          # Standalone skill option
+│       ├── SKILL.md
+│       ├── scripts/
+│       ├── references/
+│       └── README.md
 ├── README.md                   # This file
 ├── CONTRIBUTING.md
 └── LICENSE
